@@ -1,0 +1,58 @@
+,Table_name.column_name,Description
+0,monthly_teacher_attendance.teacher_id,A code made up of 10 digit that is assigned to a teacher and this code is unique for every teacher.
+1,monthly_teacher_attendance.school_code,A code made up of 10 or 11 digit that is assigned to a school and this code is unique for every school.
+2,monthly_teacher_attendance.month_start_date,Start date of month a particular month for which teacher attendance is recorded.
+3,monthly_teacher_attendance.month_end_date,End date of month a particular month for which teacher attendance is recorded.
+4,monthly_teacher_attendance.month_present_count,Total count of 'present' entries of a particular teacher for the entire month
+5,monthly_teacher_attendance.month_absent_count,Total count of 'absent' entries of a particular teacher for the entire month
+6,monthly_teacher_attendance.month_half_leave_count,Total count of 'half leave' entries of a particular teacher for the entire month
+7,monthly_teacher_attendance.month_full_leave_count,Total count of 'full leave' entries of a particular teacher for the entire month
+8,monthly_teacher_attendance.month_holiday_count,Total count of 'holiday' entries of a particular teacher for the entire month
+9,monthly_teacher_attendance.month_on_duty_count,Total count of 'on duty' entries of a particular teacher for the entire month
+10,monthly_teacher_attendance.month_in_training_count,Total count of 'in training' entries of a particular teacher for the entire month
+11,monthly_teacher_attendance.month_maternity_leave_count,Total count of 'maternity leave' entries of a particular teacher for the entire month
+12,monthly_teacher_attendance.month_under_suspension_count,Total count of 'under suspension' entries of a particular teacher for the entire month
+13,monthly_teacher_attendance.month_leave_without_pay_count,Total count of 'leave without pay' entries of a particular teacher for the entire month
+14,monthly_teacher_attendance.month_days_recorded,Total number of days for which attendance (any status) is recorded for a particular teacher in the month
+15,monthly_teacher_attendance.month_other_count,Total count of 'other' attendance statuses for the entire month
+16,monthly_teacher_attendance.month_medical_leave_count,Total count of 'medical leave' entries of a particular teacher for the entire month
+17,monthly_teacher_attendance.month_casual_leave_count,Total count of 'casual leave' entries of a particular teacher for the entire month
+18,monthly_teacher_attendance.month_earned_leave_count,Total count of 'earned leave' entries of a particular teacher for the entire month
+19,monthly_teacher_attendance.month_duty_leave_count,Total count of 'duty leave' entries of a particular teacher for the entire month
+20,monthly_teacher_attendance.month_transferred_count,Total count of 'transferred' entries of a particular teacher for the entire month
+21,monthly_teacher_attendance.month_restricted_holiday_count,Total count of 'restricted holiday' entries of a particular teacher for the entire month
+22,monthly_teacher_attendance.month_study_leave_count,Total count of 'study leave' entries of a particular teacher for the entire month
+23,monthly_teacher_attendance.month_first_half_leave_count,Total count of '1st half leave' entries of a particular teacher for the entire month
+24,monthly_teacher_attendance.month_second_half_leave_count,Total count of '2nd half leave' entries of a particular teacher for the entire month
+25,monthly_teacher_attendance.month_commutation_leave_count,Total count of 'commutation leave' entries of a particular teacher for the entire month
+26,monthly_teacher_attendance.month_paternity_leave_count,Total count of 'paternity leave' entries of a particular teacher for the entire month
+27,monthly_teacher_attendance.month_deputation_in_school_count,Total count of 'deputation in school' entries of a particular teacher for the entire month
+28,monthly_teacher_attendance.month_deputation_in_office_count,Total count of 'deputation in office' entries of a particular teacher for the entire month
+29,monthly_teacher_attendance.month_special_leave_count,Total count of 'special leave' entries of a particular teacher for the entire month
+30,monthly_teacher_attendance.month_maternity_leave_miscarriage_count,Total count of 'maternity leave for miscarriage' entries of a particular teacher for the entire month
+31,teacher_attendance.teacher_id,10 digit unique identification code for each teacher
+32,teacher_attendance.school_code,10 or 11 digit unique identificaiton code for each school
+33,teacher_attendance.attendance_status,"This column contains the attendance status of a teacher. Use numeric code from this mapping. → [1: Present, 2:Absent, 3:Half Leave, 4: Full Leave, 5:Holiday, 6:On Duty, 7: In Training, 8:Maternity Leave, 9:Under Suspension, 10: Leave Without Pay, 11: Other, 12:Medical Leave, 13:Casual Leave, 14:Earned Leave, 15:Duty Leave, 16:Transferred, 17:Restricted Holiday, 18:Study Leave, 19:1st Half Leave, 20:2nd Half Leave, 21:Commutation Leave, 22:Paternity Leave, 23:Deputation in School, 24:Deputation in Office, 25:Special Leave, 26:Maternity Leave for Miscarriage]"
+34,teacher_attendance.log_date,date on which attendance of teachers recorded
+35,total_teachers_students.school_code,10 or 11 digit unique identificaiton code for each school
+36,total_teachers_students.total_students,Total number of students stuyding in a particular school
+37,total_teachers_students.total_teachers,Total number of teachers teaching in a particular school
+38,teacher_registry.teacher_id,10 digit unique identification code for each teacher
+39,teacher_registry.school_code,10 or 11 digit unique identificaiton code for each school
+40,teacher_registry.designation,"This shows designation of a particular teacher. Possible values: ['Centre Head Teacher', 'JBT', 'JBT (HoS)', 'Head Teacher', 'PET', 'Drawing Master', 'TGT (ART)', 'Shastri', 'Head Master', 'Language Teacher', 'TGT (NM)', 'TGT (M)', 'TGT (ART) (HoS)', 'PTA', 'Lecturer', 'IT Teacher', 'Other Teacher', 'DPE', 'Principal', 'Lecturer (School New)', 'Art & Craft', 'Drawing Master (HoS)', 'Shastri (HoS)', 'TGT (NM) (HoS)', 'PET (HoS)', 'SMC Teacher', 'Lecturer (HoS)', 'Lecturer (School New) (HoS)', 'TGT (M) (HoS)', 'Vice-Principal', 'Teacher', 'Punjabi Teacher (HoS)', 'Punjabi Teacher', 'PTA (HoS)', 'Language Teacher (HoS)', 'Special Educator', 'Home Science', 'Other Teacher (HoS)', 'IT Teacher (HoS)', 'Urdu Teacher', 'SMC Teacher (HoS)', 'GVU(EGS) (HoS)', 'GVU(EGS)', 'Music', 'DPE (HoS)', 'Art & Craft (HoS)', 'Yoga Teacher', 'Teacher (HoS)', 'NTT', 'Music (HoS)', 'C&V', 'Acting Head Teacher', 'Not Provided', 'C&V (HoS)', 'Instructor positioned as per RTE', 'TGT', 'TGT (HoS)', 'Para Teacher', 'PAT']"
+41,teacher_registry.teacher_type,"This shows employment type of a teacher. Possible values: ['Contract', 'Regular', 'Others', 'Guest Faculty /Part-Time']"
+42,teacher_registry.gender,"This shows gender of a paticular teacher. Possible values are ['Male', 'Female']"
+43,teacher_registry.appointment_date,The date at which the particular teacher is appointed. The date formate is 'DD/MM/YYYY'
+44,school_registry.school_code,10 or 11 digit unique identificaiton code for each school
+45,school_registry.school_name,Name of a a school for a particular school_code. school_code is 10 or 11 digit unique identificaiton code for each school
+46,school_registry.lowest_class,minimum class on which students are studying in this school
+47,school_registry.highest_class,maximum class on which students are studying in this school
+48,school_registry.block_name,If question has block word and no word is present before word block that is like name of block then use 'Banikhet' as default block
+49,school_registry.cluster_name,If question has cluster word and no word is present before word cluster that is like name of cluster then use 'GSSS BERTHIN' as default cluster
+50,school_registry.school_category,"['Pr. with Up.Pr. sec. and H.Sec.', 'Primary', 'Up. Pr. Secondary and Higher Sec', 'Upper Pr. and Secondary', 'Upper Primary only']"
+51,school_registry.village_name,Village name in which school is located
+52,school_registry.school_established_year,Year in which school is started
+53,school_registry.affiliation_board,"Possible values: [nan, 'State Board', 'Others', 'Both CBSE & State Board']"
+54,school_registry.school_location,"Possible values: ['Rural', 'Urban', 'Not Defined']"
+55,school_registry.district_name,"Possible district names: ['SIRMAUR', 'SHIMLA', 'KULLU', 'CHAMBA', 'MANDI', 'LAHUL & SPITI', 'SOLAN', 'KINNAUR', 'KANGRA', 'HAMIRPUR (H.P.)', 'BILASPUR (H.P.)', 'UNA', 'Shivalikgarh']. If no name of district is mentioned and question has district word then use 'Shimla' as default district"
+56,school_registry.school_type,"Possible values: ['Co-educational', 'Girls', 'Boys']."

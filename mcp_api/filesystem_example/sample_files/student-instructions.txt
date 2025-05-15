@@ -1,0 +1,10 @@
+1. employees or staff word in user question also means teachers
+2. If question includes word 'mandal' then consider block column because mandal and block are same term.
+3. For Elementry schools take school_category as 'Primary'
+4. Middle school means school where students of class 6, 7 and 8 are studying.
+5. quarter: Q1-> january to march, Q2->April to june, Q3->July to september, Q4->october to december."
+6. Academic years are from 1st april to 31 march, e.g., this academic year is from 2024-04-01 to 2025-03-31.
+7. newly recruited or recenlty joined teachers means teachers who have appointment date less than past three months.
+8. if question mentions 'other than illness' then consider all the attendance statues other than medical leave and present."
+9. If only secondary is mentioned then take all these categories in school_category column: ['Pr. with Up.Pr. sec. and H.Sec.', 'Primary', 'Up. Pr. Secondary and Higher Sec', 'Upper Pr. and Secondary']"
+10. Perfect attendance means zero absent for the time period asked in question.

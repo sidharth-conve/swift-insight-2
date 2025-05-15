@@ -1,0 +1,264 @@
+,Table_name.column_name,Description
+0,sch_master.udise_sch_code,"Unique identifier code each school, associated with school_name in sch_master table. This can be joined with udise_sch_code in sch_facility tables. "
+1,sch_master.school_name,Name of the school for the corresponding 'udise_sch_code'
+2,sch_master.state_code,"Code of the state in India where the school is located, is associated with state name e.g '2'."
+3,sch_master.state_name,"Name of the state where the school is located, is associated with state code e.g 'Himachal Pradesh'."
+4,sch_master.district_code,"Code of the district where the school is located, is associated with district name e.g '202'."
+5,sch_master.block_code,"Code of the block where the school is located, e.g '20221'.(5 digit code)"
+6,sch_master.village_code,Code representing the village or ward where the school is located. e.g '202702089'.(9 digit code)
+7,sch_master.cluster_code,Code representing the cluster where the school is located e.g '2427020022'.(10 digit code)
+8,sch_master.sch_gender_type,"Indicate whether schools is only for boys or only for girls or for both gender i.e Co-ed. This can only be one of the following values ['Co-Educational/Co-Ed', 'Boys', 'Girls']"
+9,sch_master.school_status,"Indicate whether school is active or inactive. While filtering only consider active schools, but When asked for total schools must consider active and inactive schools. 0(int) indicates active schools."
+10,sch_master.class_from,"Indicates the lowest class/grade offered by the school. e.g if school is from class 1 to 12, then class_from is 1 and class_to is 12."
+11,sch_master.class_to,Indicates the highest class/grade offered by the school. related to 'class_from'
+12,sch_master.is_nsqf,"Indicates whether the school is National Skills Qualifications Framework (NSQF) compliant. Can only be ['Yes','No']"
+13,sch_master.pre_primary_sec_yn,"Indicates whether the school has pre-primary section (other than Anganwadi) or not. Can only be ['Yes','No']"
+14,sch_master.pre_primary_sec_num,Number of pre-primary sections available in the school. Related to 'pre_primary_sec_yn' 
+15,sch_master.email,"Email address of the school, can be used as contact information"
+16,sch_master.website,Website URL of the school
+17,sch_master.estd_year,Year when the school was established or Built.
+18,sch_master.sch_stdcode,Prefix telephone Standard code of the school
+19,sch_master.sch_phone,Phone number of the school. Contact/Call number of school.
+20,sch_master.head_master_type,"Type of the Head of school/ In charge. This can only be one of the following values ['Head Master/Principal', 'Asst. Head Master/Vice Principal', 'Acting Head Teacher', 'In-Charge from Other School', 'In-Charge from Block/District', 'Others','Not Defined', 'N/A']. "
+21,sch_master.head_master_name,Name of the Head of school/ In charge
+22,sch_master.affiliation_board_sec,"Board to which the school is affiliated for secondary education, which board curriculum secondary school is following. This can only be one of the following value.['CBSE', 'State Board', 'ICSE', 'International Board', 'Both CBSE and State Board', 'Madarsa Board', 'Sanskrit Board', 'N/A']"
+23,sch_master.affiliation_no_sec,Unique Affiliation Code corresponding to affiliation board for secondary education. related to 'affiliation_board_sec
+24,sch_master.affiliation_board_hsec,"Board to which the school is affiliated for higher secondary education, which board curriculum secondary school is following. This can only be one of the following value.['CBSE', 'State Board', 'ICSE', 'International Board', 'Both CBSE and State Board', 'Madarsa Board', 'Sanskrit Board', 'N/A']"
+25,sch_master.affiliation_no_hsec,Unique Affiliation Code corresponding to affiliation board for higher secondary education. related to 'affiliation_board_hsec
+26,sch_master.respondent_type,"Type of the respondent of school. Person who filled UDISE form for school. This can be only one of the following values. ['Head of the School/In-Charge', 'Teacher', 'School Administration Staff/Official/Clerk', 'In Charge from Block/District/Cluster', 'In Charge from Other School']"
+27,sch_master.respondent_name,"Name of the respondent of school. Person who filled UDISE form for school, corresponding to 'udise_sch_code','respondent_type"
+28,sch_master.upgrd_to_upr_year,Year of upgrading the school to upper primary ie upgrading from primary to upper primary
+29,sch_master.upgrd_to_secondary_year,Year of upgrading the school to secondary i.e upgrading from upper primary to secondary
+30,sch_master.upgrd_to_highersec_year,Year of upgrading the school to higher secondary i.e upgrading from secondary to higher secondary
+31,sch_master.recog_year_pri,"Year, when for primary education was introduced in school"
+32,sch_master.recog_year_upr,"Year, when for upper primary education was introduced in school"
+33,sch_master.recog_year_sec,"Year, when for secondary education was introduced in school"
+34,sch_master.recog_year_hsec,"Year, when for higher secondary education was introduced in school"
+35,sch_master.medium_of_instr_1,"Medium of instruction 1 ((i.e 1st largest language medium), A langauage or medium in which students are taught, Can only be one of the following values ['Gujarati','Marathi','Hindi','Odia','Urdu','Sanskrit','English','Possible Mistake','Telugu']. i.e. Gujarati is for Gujarati medium school. i.e. English is for English medium school. Can also be used for Language immersion."
+36,sch_master.medium_of_instr_2,"Medium of instruction 2 (i.e 2nd largest language medium), A langauage or medium in which students are taught, Can only be one of the following values ['Gujarati','Marathi','Hindi','Odia','Urdu','Sanskrit','English','Possible Mistake','Telugu']. i.e. Gujarati is for Gujarati medium school. i.e. English is for English medium school. Can also be used for Language immersion."
+37,sch_master.medium_of_instr_3,"Medium of instruction 3 (i.e 3rd largest language medium), A langauage or medium in which students are taught, Can only be one of the following values ['Gujarati','Marathi','Hindi','Odia','Urdu','Sanskrit','English','Possible Mistake','Telugu']. i.e. Gujarati is for Gujarati medium school. i.e. English is for English medium school. Can also be used for Language immersion."
+38,sch_master.medium_of_instr_4,"Medium of instruction 4 (i.e 4th largest language medium), A langauage or medium in which students are taught, Can only be one of the following values ['Gujarati','Marathi','Hindi','Odia','Urdu','Sanskrit','English','Possible Mistake','Telugu']. i.e. Gujarati is for Gujarati medium school. i.e. English is for English medium school. Can also be used for Language immersion."
+39,sch_master.board_sec_oth,If Any other affiliation board for secondary level
+40,sch_master.board_hsec_oth,If Any other affiliation board for higher secondary level
+41,sch_master.medinstr_oth,If any other medium/language of instruction
+42,sch_master.assembly_cons_cd,Assembly Constituency Code in while school is located
+43,sch_master.parl_cons_cd,Parliamentary Constituency Code in while school is located
+44,sch_master.respondent_mobile,"Mobile number of the respondent of the school, person who filled UDISE form for school, correspoding to 'udise_sch_code'"
+45,sch_master.sch_loc_rural_urban,"Indicated whether school is located on urbal area or rural area. This can be only one of the following values. ['RURAL', 'URBAN', 'N/A']"
+46,sch_master.strm_arts_yn,"Indicates whether arts stream is available in school. Can only be ['Yes','No']"
+47,sch_master.strm_science_yn,"Indicates whether science stream is available in school. Can only be ['Yes','No']"
+48,sch_master.strm_commerce_yn,"Indicates whether commerce stream is available in school. Can only be ['Yes','No']"
+49,sch_master.strm_vocational_yn,"Indicates whether vocational stream is available in school. Can only be ['Yes','No']"
+50,sch_master.strm_other_yn,"Indicates whether any other streams (apart from art, science, commerce and vocational) are available in school. Can only be ['Yes','No']"
+51,sch_master.address,"Address of the school, corresponding to 'udise_sch_code', can be used as contact information"
+52,sch_master.latitude,"Latitude coordinate of the school. 'latitude', 'longitude' tells about school geographical location"
+53,sch_master.longitude,"Longitude coordinate of the school. 'latitude', 'longitude' tells about school geographical location."
+54,sch_master.pincode,Postal code of the school location
+55,sch_master.sch_category_type,"Categorizes schools based on the range of grades they offer, directly indicating the school's educational level. Use this column to filter schools by specific educational levels, such as 'Secondary' for schools focusing on grades typically associated with secondary education. This can be one of following values : ['Higher-Secondary','Pre-Primary','Primary','Secondary','Upper Primary','Not Defined']."
+56,sch_master.sch_mgmt_sub_group,"Indicates Sub management group of school. Possible values are ['Department of Education', 'Private Unaided (Recognized)', 'Tribal Welfare Department', 'Madrasa Siksha Kendra', 'Local Body', 'Sainik School', 'Other State Govt. Managed', 'Railway School', 'Minority Affairs Dept.', 'Central Tibetan School', 'SSKs & MSKs', 'Other Central Govt./PSU Schools', 'Govt. Sponsored', 'Unrecognized', 'Mass Education', 'Madrasa Aided (Recognized)', 'Social Welfare Department', 'Madarsa Unrecognized', 'Ministry of Labour', 'Madrasa Private Unaided (Recognized)', 'Government Aided', 'Sanskrit Schools/Gurukuls/Pathashalas (Aided/Unaided)', 'Partially Govt. Aided']"
+57,sch_master.district_name,"Name of the district where the school is located. Possible districts : ['CHAMBA','KANGRA','LAHUL & SPITI','KULLU','MANDI','HAMIRPUR (H.P.)','UNA','BILASPUR (H.P.)','SOLAN','SIRMAUR','SHIMLA','KINNAUR']"
+58,sch_master.village_ward_name,"Name of the village, where school is located corresponding to udise_sch_code."
+59,sch_master.village_is_active,"Indicates whether the village is active (1, NULL)"
+60,sch_master.block_name,"Name of the block where the school is located,corresponding to udise_sch_code."
+61,sch_master.cluster_name,"Name of the cluster where the school is located, corresponding to udise_sch_code."
+62,sch_master.lgd_urban_local_body_id,"Indicates Urban local body ID as per LGD - Local Government Directory where the school is present, related to 'lgd_urban_local_body_name'"
+63,sch_master.parlimentary_constituency_name,"Name of parliamentary constituency in which school is located, related to 'parl_cons_cd'. Possible values are ['Kangra','Mandi','Hamirpur','Shimla']"
+64,sch_master.assembly_constituency_name,"Name of Assembly constituency in which school is located, related to 'assembly_cons_cd'"
+65,sch_master.lgd_urban_local_body_name,"Indicates Name of Urban local body as per LGD - Local Government Directory where the school is present, related to 'lgd_urban_local_body_id'"
+66,sch_master.lgd_ward_id,"Indicates Ward ID as per LGD - Local Government Directory where the school is present, related to 'lgd_ward_name'"
+67,sch_master.lgd_ward_name,"Indicates Name of Ward as per LGD - Local Government Directory where the school is present, related to 'lgd_ward_id'"
+68,sch_master.lgd_village_id,"Indicates Village ID as per LGD - Local Government Directory where the school is present, related to 'lgd_vill_name'"
+69,sch_master.lgd_vill_name,"Indicates Name of Village as per LGD - Local Government Directory where the school is present, related to 'lgd_village_id'"
+70,sch_master.lgd_panchayat_id,"Indicates Gram Panchayat ID - Village Panchayat ID as per LGD - Local Government Directory where the school is present, related to 'lgd_vill_panchayat_name'"
+71,sch_master.lgd_vill_panchayat_name,"Indicates Name of Gram Panchayat - Village Panchayat as per LGD - Local Government Directory where the school is present, related to 'lgd_panchayat_id'"
+72,sch_master.lgd_district_id,"Indicates District ID as per LGD - Local Government Directory where the school is present, related to 'lgd_district_name'"
+73,sch_master.lgd_district_name,"Indicates Name of District as per LGD - Local Government Directory where the school is present, related to 'lgd_district_id'. Dont use this column unless AS per LGD specified, use district_name instead."
+74,sch_master.lgd_block_id,"Indicates Block ID as per LGD - Local Government Directory where the school is present, related to 'lgd_block_name'"
+75,sch_master.lgd_block_name,"Indicates Name of Block as per LGD - Local Government Directory where the school is present, related to 'lgd_block_id'"
+76,sch_facility.udise_sch_code,"Unique identifier code each school, associated with school_name in sch_master table. If asked about schools, retun udise_sch_code with school name. This can be joined with udise_sch_code in sch_master and sch_profile tables. "
+77,sch_facility.ac_year,Academic year for which facility data is collected.
+78,sch_facility.bld_status,"Ownership Status of school building. Tells who owns the school building. This can only be one of the following values. ['Private Owned', 'Rented', 'Government Owned', 'Government School in a Rent free building', 'NO Building (Running in Open Place)', 'School Running in other Department Building']"
+79,sch_facility.sch_bld_blk_tot,Total number of school blocks/buildings in school
+80,sch_facility.sch_bld_blk_active_tot,Total number of functional/active/running blocks/buildings in school
+81,sch_facility.bld_blk_pucca,Number of pucca(made of brick and cement) blocks/buildings in school
+82,sch_facility.bld_blk_kuch,Number of kuchcha(e.g. hut) blocks/buildings in school
+83,sch_facility.bld_blk_tnt,Number of Tented blocks/buildings in school
+84,sch_facility.bld_blk_dptd,Number dilapidated or in bad condition blocks/buildings in school
+85,sch_facility.bld_blk_under_cstrc,Number under construction buildings/blocks in school
+86,sch_facility.bndrywall_type,"Type of boundary wall of school. This can only be one of the following values. ['Pucca', 'Pucca but broken', 'Barbed wire fencing', 'Hedges', 'No boundary walls', 'Others', 'Partial', 'Under Construction']"
+87,sch_facility.cls_rm_for_instrc,"Number of classrooms used for instruction in school i.e used for teaching purposes, corresponding to 'udise_sch_code'"
+88,sch_facility.cls_rm_not_for_instrc,"Number of classrooms not used for instruction in school i.e not used for  teaching purposes, corresponding to 'udise_sch_code'"
+89,sch_facility.cls_rm_under_cstrc,Number of classrooms under construction in school. Not related to 'bld_blk_under_cstrc' 
+90,sch_facility.clsrms_dptd,Number of classrooms dilapidated or in bad condition in school
+91,sch_facility.clsrms_pre_pri,Represents the total count of classrooms dedicated to pre-primary education within the school.
+92,sch_facility.clsrms_pri,Represents the total count of classrooms dedicated to primary education within the school.
+93,sch_facility.clsrms_upr,Represents the total count of classrooms dedicated to upper primary education within the school.
+94,sch_facility.clsrms_sec,Represents the total count of classrooms dedicated to secondary education within the school.
+95,sch_facility.clsrms_hsec,Represents the total count of classrooms dedicated to higher secondary education within the school.
+96,sch_facility.othrooms,Number of other rooms in school
+97,sch_facility.num_cls_rms_gd_cond,"Number of classrooms in good condition in school, can be used to judge infrastructure of school if not specified any facility."
+98,sch_facility.num_cls_rms_gd_cond_pucca,Number of pucca classrooms in good condition in school
+99,sch_facility.num_cls_rms_gd_cond_kuc,Number of kuchha classrooms in good condition in school
+100,sch_facility.num_cls_rms_gd_cond_tnt,Number of tented classrooms in good condition in school
+101,sch_facility.cls_rm_need_min_repr,Number of classrooms needing minor repairs in school
+102,sch_facility.clsrms_min_kun,Total number of Kucha classroom in school which need minor repair
+103,sch_facility.clsrms_min_tnt,Total number of Tent classroom in school which need minor repair
+104,sch_facility.clsrms_maj_kuc,Total number of Kucha classroom in school which need major repair
+105,sch_facility.clsrms_maj_tnt,Total number of Tent classroom in school which need major repair
+106,sch_facility.clsrms_min_tnt,Number of classrooms needing minor repairs for Tented blocks/buildings in school
+107,sch_facility.cls_rm_need_min_repr_pucca,Number of pucca classrooms needing minor repairs in school
+108,sch_facility.cls_rm_need_maj_repr,Number of classrooms needing major repairs in school
+109,sch_facility.cls_rm_need_maj_repr_pucca,Number of pucca classrooms needing major repairs in school
+110,sch_facility.additional_class_room,Number of additional classrooms in school
+111,sch_facility.toilet_yn,"Indicates whether the school has toilets or not. Can only be ['Yes','No']"
+112,sch_facility.num_toilet_boys,total number of toilets for boys in school
+113,sch_facility.num_toilet_boys_func,Number of functional/operational toilets for boys in school
+114,sch_facility.num_toilet_girls,total number of toilets for girls
+115,sch_facility.num_toilet_girls_func,Number toilets for girls that are functional/operational in school.
+116,sch_facility.num_toilet_boys_for_disable,total number of toilets for boys with disabilities or CWSN (Children with special needs)
+117,sch_facility.num_toilet_boys_for_disable_func,Number of functional/operational toilets for boys with disabilities or CWSN (Children with special needs)
+118,sch_facility.num_toilet_girls_for_disable,total number of toilets for girls with disabilities or CWSN(Children with special needs)
+119,sch_facility.num_toilet_girls_for_disable_func,Number of functional/operational toilets for girls with disabilities or CWSN(Children with special needs)
+120,sch_facility.toilet_boys_fun_water,Number of boys toilet in which there is functional water supply
+121,sch_facility.toilet_girls_fun_water,Number of boys toilet in which there is functional water supply
+122,sch_facility.num_urinal_boys,Number of urinals for boys
+123,sch_facility.num_urinal_girls,Number of urinals for girls
+124,sch_facility.num_urinal_boys_water,Number of urinals for boys with water supply
+125,sch_facility.num_urinal_girls_water,Number of urinals for girls with water supply
+126,sch_facility.num_urinal_boys_func,Number of functional/operational urinals for boys
+127,sch_facility.num_urinal_girls_func,Number of functional/operational urinals for girls
+128,sch_facility.handwash_yn,"Indicates whether there is hand washing facility with soap available near toilets/urinals block in school. Can only be ['Yes','No']"
+129,sch_facility.incinerator_yn,"Indicates whether there is an incinerator available in girls toilet in school. Can only be ['Yes','No',NULL]"
+130,sch_facility.drink_water_yn,"Indicates whether there is drinking water supply in school. Can only be ['Yes','No']"
+131,sch_facility.hand_pump_yn,"Indicates whether there is a hand pump in school for water supply. Can only be ['Yes','No']"
+132,sch_facility.hand_pump_fun_yn,"Indicates whether the hand pump for water supply is functional/operational. Can only be ['Yes','No']"
+133,sch_facility.well_protected_yn,"Indicates whether the well for water is protected/covered in school. Can only be ['Yes','No']"
+134,sch_facility.well_protected_func_yn,"Indicates whether the protected/covered well for water is functional/operational. Can only be ['Yes','No']"
+135,sch_facility.well_unprotected_yn,"Indicates whether the well for water is unprotected in school. Can only be ['Yes','No']"
+136,sch_facility.well_unprotected_func_yn,"Indicates whether the unprotected well for water  is functional i.e usable. Can only be ['Yes','No']"
+137,sch_facility.tap_yn,"Indicates whether there is a water tap in the school. Can only be ['Yes','No']"
+138,sch_facility.tap_fun_yn,"Indicates whether the water tap is functional in school. Can only be ['Yes','No']"
+139,sch_facility.pack_water_yn,"Indicates whether there is packaged water supply in school. Can only be ['Yes','No']"
+140,sch_facility.pack_water_fun_yn,"Indicates whether the packaged water supply is functional or proper. Can only be ['Yes','No']"
+141,sch_facility.othsrc_yn,"Indicates whether there are other water supply sources in school. Can only be ['Yes','No']"
+142,sch_facility.othsrc_fun_yn,"Indicates whether the other water supply sources are functional. Can only be ['Yes','No']"
+143,sch_facility.othsrc_name,Name of other water sources in school if othsrc_yn is 'Yes'
+144,sch_facility.water_purifier_yn,"Indicates whether there is a water purifier in school. This can only be one of the following values. ['Yes', 'No', 'Yes, but not Functional', 'N/A']"
+145,sch_facility.rain_harvest_yn,"Indicates whether there is rainwater harvesting in school. This can only be one of the following values. ['Yes', 'No', 'Yes, but not Functional', 'N/A']"
+146,sch_facility.water_tested_yn,"Indicates whether the water used is tested for contamination in school. Can only be ['Yes','No']"
+147,sch_facility.handwash_meal_yn,"Indicates whether there are handwashing facilities after meals in school. Can only be ['Yes','No']"
+148,sch_facility.electricity_yn,"Indicates whether there is electricity in school. Can only be ['Yes','No','N/A']"
+149,sch_facility.solarpanel_yn,"Indicates whether there are solar panels in school. Can only be ['Yes','No','N/A']"
+150,sch_facility.library_yn,"Indicates whether there is a library in school. Can only be ['Yes','No']"
+151,sch_facility.lib_books,Number of books in the library of school
+152,sch_facility.lib_books_ncert,Number of NCERT books in the library of school
+153,sch_facility.bookbank_yn,"Indicates whether there is a book bank in school. Can only be ['Yes','No']"
+154,sch_facility.bkbnk_books,Number of books in the book bank of school
+155,sch_facility.bkbnk_books_ncert,Number of NCERT books in the book bank of school
+156,sch_facility.readcorner_yn,"Indicates whether there is a reading corner/space/room in school. Can only be ['Yes','No']"
+157,sch_facility.readcorner_books,Number of books in the reading corner/space/room of school
+158,sch_facility.librarian_yn,"Indicates whether there is a librarian. Can only be ['Yes','No']"
+159,sch_facility.newspaper_yn,"Indicates whether there are newspapers. Can only be ['Yes','No']"
+160,sch_facility.playground_yn,"Indicates whether there is a playground. Can only be ['Yes','No']"
+161,sch_facility.plygrnd_alterntive_yn,"Indicates whether there is an alternative to a playground. Can only be ['Yes','No']"
+162,sch_facility.medical_chk_yn,"Indicates Whether Medical check-up of students was conducted in last academic year. Can only be ['Yes','No']"
+163,sch_facility.num_of_medical_chk_tot,Total number of medical check-ups conducted in school
+164,sch_facility.dewormtab_yn,"Indicates whether deworming tablets are given. Can only be one of the following. ['Complete (two doses)', 'Partially (one dose)', 'Not given']"
+165,sch_facility.irontab_yn,"Indicates whether iron tablets are given. Can only be ['Yes','No']"
+166,sch_facility.stair_ramps_yn,"Indicates whether there are stair ramps for CWSN(Children with special needs) in school. Can only be ['Yes','No']"
+167,sch_facility.handrails_yn,"Indicates whether there are handrails to stairs in school. Can only be ['Yes','No','N/A']"
+168,sch_facility.spl_educator_yn,"Indicates the presence of a special educator. Can only be one of the following values. ['Dedicated','No','At cluster level']"
+169,sch_facility.kitchen_garden_yn,"Indicates whether there is a kitchen garden in school. Can only be ['Yes','No']"
+170,sch_facility.num_handwash_meal_tot,Total number of handwashing facilities after meals in school
+171,sch_facility.dstbn_clsrms_yn,"Indicates whether there are dustbins in classrooms. Can only be one of the following values. ['Yes and all', 'Yes but some', 'No']"
+172,sch_facility.dstbn_toilet_yn,"Indicates whether there are dustbins in toilets. Can only be one of the following values. ['Yes and all', 'Yes but some', 'No']"
+173,sch_facility.dstbn_kitchen_yn,"Indicates whether there are dustbins in kitchens or kitchen gardens. Can only be ['Yes','No']"
+174,sch_facility.furnitutre_yn,"Indicates the availability of furniture in school. ['Yes for all', 'Partial', 'No Furniture Available']"
+175,sch_facility.num_of_stdnt_furnt_avail,Number of students for whom furniture is available in school
+176,sch_facility.thermal_scanner_yn,"Indicates whether there is a thermal scanner in school. Can only be ['Yes','No']"
+177,sch_facility.first_aid_yn,"Indicates whether there is a first aid /medical  kit available in school. Can only be ['Yes','No']"
+178,sch_facility.life_saving_kit_yn,"Indicates whether there is a life-saving kit available in school. Can only be ['Yes','No']"
+179,sch_facility.health_chk_height_yn,"Indicates whether there is a health check for students height in school. Can only be ['Yes','No', NULL]"
+180,sch_facility.health_chk_weight_yn,"Indicates whether there is a health check for students weight in school. Can only be ['Yes','No', NULL]"
+181,sch_facility.health_chk_eyes_yn,"Indicates whether there is a health check for students eyes in school. Can only be ['Yes','No', NULL]"
+182,sch_facility.health_chk_dental_yn,"Indicates whether there is a health check for students dental in school. Can only be ['Yes','No', NULL]"
+183,sch_facility.health_chk_throat_yn,"Indicates whether there is a health check for students throat in school. Can only be ['Yes','No', NULL]"
+184,sch_facility.annual_health_record_yn,"Indicates whether there is an annual health record of students. Can only be ['Yes','No', NULL]"
+185,sch_facility.land_for_sch_expand_avl_yn,"Indicates whether there is land available for school expansion. Can only be ['Yes','No', NULL]"
+186,sch_facility.kitchen_shed_yn,"Indicates whether there is a kitchen shed. Can only be ['Yes','No', NULL]"
+187,sch_facility.asst_hd_mst_vc_pncpl_rm_yn,"Indicates whether there is a separate room available for assistant headmaster/vice principal. Can only be ['Yes','No', NULL]"
+188,sch_facility.comroom_girls_yn,"Indicates whether there is a separate common room for girls in school. Can only be ['Yes','No', NULL]"
+189,sch_facility.staff_room_yn,"Indicates whether there is a staff room in school. Can only be ['Yes','No', NULL]"
+190,sch_facility.craft_room_yn,"Indicates whether there is a art and craft room in school. Can only be ['Yes','No', NULL]"
+191,sch_facility.staff_qtr_yn,"Indicates whether there are staff quarters (for teachers and admin staff) in school. Can only be ['Yes','No', NULL]"
+192,sch_facility.intgrted_phy_chem_bio_sci_lab_yn,"Indicates whether there is an integrated physics, chemistry, biology, and science lab in school. Can only be ['Yes','No', NULL]"
+193,sch_facility.library_room_yn,"Indicates whether there is a library room in school. Can only be ['Yes','No']"
+194,sch_facility.tinkering_lab_yn,"Indicates whether there is a tinkering lab in school. Can only be ['Yes','No', NULL]"
+195,sch_facility.sanitary_machine_yn,"Indicates whether there is a Sanitary Pad vending machine in school. Can only be ['Yes','No', NULL, 'No, Pads available with Class Teachers']"
+196,sch_facility.head_mst_room_avail_yn,"Indicates whether there is a headmaster's room available in school. Can only be ['Yes','No']"
+197,sch_facility.phy_lab_yn,"Indicates whether there is a separate physics lab in school. Can only be ['Yes','No', NULL]"
+198,sch_facility.phy_lab_cond,"Condition of the physics lab of school. Related to 'phy_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+199,sch_facility.chem_lab_yn,"Indicates whether there is a separate chemistry lab in school. Can only be ['Yes','No', NULL]"
+200,sch_facility.chem_lab_cond,"Condition of the chemistry lab of school.Related to 'chem_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+201,sch_facility.bio_lab_yn,"Indicates whether there is a separate biology lab in school. Can only be ['Yes','No', NULL]"
+202,sch_facility.bio_lab_cond,"Condition of the biology lab of school.Related to 'bio_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+203,sch_facility.math_lab_yn,"Indicates whether there is a separate math lab in school. Can only be ['Yes','No', NULL]"
+204,sch_facility.math_lab_cond,"Condition of the math lab of school. Related to 'math_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+205,sch_facility.lang_lab_yn,"Indicates whether there is a separate language lab in school ie lab to learn language. Can only be ['Yes','No', NULL]"
+206,sch_facility.lang_lab_cond,"Condition of the language lab of school.Related to 'lang_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+207,sch_facility.geo_lab_yn,"Indicates whether there is a separate geography lab in school. Can only be ['Yes','No', NULL]"
+208,sch_facility.geo_lab_cond,"Condition of the geography lab of school.Related to 'geo_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+209,sch_facility.home_sci_lab_yn,"Indicates whether there is a separate home science lab in school. Can only be ['Yes','No', NULL]"
+210,sch_facility.home_sci_lab_cond,"Condition of the home science lab of school.Related to 'homesc_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+211,sch_facility.psychology_lab_yn,"Indicates whether there is a separate psychology lab in school. Can only be ['Yes','No', NULL]"
+212,sch_facility.psychology_lab_cond,"Condition of the psychology lab of school. Related to 'psychology_lab_yn'. Can only be one of the following value. [ 'Lab Not Available', 'Not Equipped', 'Fully Laboratories Equipped', 'Partially Equipped','Not Defined']"
+213,sch_facility.audio_system_yn,"Indicates whether there is an audio, visual or public address system in school. Can only be of the following. ['Yes', 'Yes but not Functional', 'No']"
+214,sch_facility.sci_kit_eqpmnt_yn,"Indicates whether there is Science kit equipment in school. Can only be of the following. ['Yes', 'Yes but not Functional', 'No']"
+215,sch_facility.math_kit_eqpmnt_yn,"Indicates whether there is Math kit equipment in school. Can only be of the following. ['Yes', 'Yes but not Functional', 'No']"
+216,sch_facility.biometric_dev_yn,"Indicates whether there is a biometric device in school. Can only be of the following. ['Yes', 'Yes but not Functional', 'No']"
+217,sch_facility.ict_impl_year,Year of implementation for ICT(Information and Communication Technology) in school
+218,sch_facility.ictlab_fun_yn,"Indicates whether the ICT(Information and Communication Technology) lab is functional in school. Can only be ['Yes','No']"
+219,sch_facility.ict_model_impl,"Implementation model for ICT(Information and Communication Technology) in school. Can only be one of the following ['Not Defined', 'Others', 'BOOT Model', 'BOO Model']"
+220,sch_facility.ict_instr_type,"Type of instruction for ICT(Information and Communication Technology) in school. Can only be one of the following ['Not defined', 'Full Time', 'Not Available', 'Part Time']"
+221,sch_facility.laptop_tot,Total number of laptops in school
+222,sch_facility.laptop_fun,Number of functional laptops in school
+223,sch_facility.tablets_tot,Total number of tablets given/in school
+224,sch_facility.tablets_fun,Number of functional tablets given/in school
+225,sch_facility.desktop_computer_tot,Total number of desktop computers in school
+226,sch_facility.desktop_computer_fun,Number of functional desktop computers in school
+227,sch_facility.pc_with_teaching_device_tot,Total number of PCs with teaching devices in school
+228,sch_facility.pc_with_teaching_device_fun,Number of functional PCs with teaching devices in school
+229,sch_facility.digi_board_tot,Total number of digital boards in school
+230,sch_facility.digi_board_fun,Number of functional digital boards in school
+231,sch_facility.server_tot,Total number of servers in school
+232,sch_facility.server_fun,Number of functional servers in school
+233,sch_facility.projector_tot,Total number of projectors in school
+234,sch_facility.projector_fun,Number of functional projectors in school
+235,sch_facility.printer_tot,Total number of printers in school
+236,sch_facility.printer_fun,Number of functional printers in school
+237,sch_facility.scanner_tot,Total number of scanners in school
+238,sch_facility.scanner_fun,Number of functional scanners in school
+239,sch_facility.webcam_tot,Total number of webcams in school
+240,sch_facility.webcam_fun,Number of functional webcams in school
+241,sch_facility.internet_yn,"Indicates whether there is internet access / internet connectivity available. Can only be ['Yes','No']"
+242,sch_facility.digi_library_res_yn,"Indicates whether there is access to separate digital library resources in school. Can only be ['Yes','No']"
+243,sch_facility.tech_soln_yn,"Indicates whether there is a technology solution for CWSN(Children with special needs) in school.Can only be ['Yes','No']"
+244,sch_facility.interactive_tools_yn,"Indicates whether there are interactive tools - ICT tools available in school. Can only be ['Yes','No']"
+245,sch_facility.info_comm_tech_teach_hrs,Number of hours for ICT(Information and Communication Technology) - teaching in school
+246,sch_facility.generator_tot,Total number of generators for electricity in school
+247,sch_facility.generator_fun,Number of functional generators for electricity in school
+248,sch_facility.info_comm_tech_lab_yn,"Indicates whether the ICT(Information and Communication Technology) lab in school. Can only be ['Yes','No',NULL]"
+249,sch_facility.smarttv_tot,Total number of smart TVs in school
+250,sch_facility.smarttv_fun,Number of functional smart TVs in school
+251,sch_facility.smart_class_tv_tot,Total number of smart class rooms with TVs / Virtual Classroom / Digital boards in school
+252,sch_facility.smart_class_tv_func,Number of functional smart class rooms with TVs / Virtual Classroom / Digital boards in school
+253,sch_facility.radio_tot,Total number of radios in school
+254,sch_facility.radio_fun,Number of functional radios in school
+255,sch_facility.mobile_tot,Total number of mobile devices in school
+256,sch_facility.mobile_fun,Number of functional mobile devices in school
+257,sch_facility.access_dth_yn,"Indicates whether there is access to DTH tv services. Can only be ['Yes','No']"
+258,sch_facility.internet_category,"Type of internet connection in school. This can only be one of the following values. ['Broadband/Leased Line', 'Mobile phone Internet', 'Telephone line with modem', 'USB Modem/dongle/Portable Hotspot', 'Any Other type of connection','Not Defined', 'VSAT')"
+259,sch_facility.internet_access_pedagogy_yn,"Indicates whether there is internet access or internet connectivity used for teaching or pedagogy. Can only be one of the following. ['Yes','No',NULL]"
+260,sch_facility.comp_lab_yn,"Indicates whether there is a separate computer lab in school. Can only be ['Yes','No']"
+261,sch_facility.digital_lab_yn,"Indicates whether there is a digital lab in school. Can only be ['Yes','No']"
+262,sch_facility.digital_lab_tot,Total number of digital labs in schools

@@ -1,0 +1,54 @@
+,Table_name.column_name,Description
+0,monthly_student_attendance.student_id,10 digit unique identification code for each student
+1,monthly_student_attendance.school_code,10 or 11 digit unique identificaiton code for each school
+2,monthly_student_attendance.month_start_date,Start date of month for which student attendance is recorded.
+3,monthly_student_attendance.month_end_date,End date of month for which student attendance is recorded.
+4,monthly_student_attendance.month_present_count,Total count of 'present' entries of a particular student for the entire month
+5,monthly_student_attendance.month_absent_count,Total count of 'absent' entries of a particular student for the entire month
+6,monthly_student_attendance.month_days_recorded,Total number of days recorded for a particular student in the month
+7,weekly_student_attendance.student_id,10 digit unique identification code for each student
+8,weekly_student_attendance.school_code,10 or 11 digit unique identificaiton code for each school
+9,weekly_student_attendance.week_start_date,"Start date of week for which student attendance is recorded. Week start day is on monday, so this is date of that monday"
+10,weekly_student_attendance.week_end_date,"End date of week for which student attendance is recorded. Week end day is on sunday, so this is date of that sunday"
+11,weekly_student_attendance.week_present_count,Total count of 'present' entries of a particular student for the entire week
+12,weekly_student_attendance.week_absent_count,Total count of 'absent' entries of a particular student for the entire week
+13,weekly_student_attendance.week_days_recorded,Total number of days recorded for a particular student in the week
+14,student_attendance.student_id,10 digit unique identification code for each student
+15,student_attendance.school_code,10 or 11 digit unique identificaiton code for each school
+16,student_attendance.attendance_status,"This column contains the attendance status of a student. Use this mapping. → ['1': Present, '2':Absent]"
+17,student_attendance.log_date,date on which attendance of students recorded
+18,student_attendance.user_medium,"Medium of instruction, language in which students are being taught. Use this shortcocde mapping ['HI', 'EN']. 'HI' for Hindi Medium schools, 'EN' for 'English Medium School'."
+19,student_attendance.teacher_code,"Unique identifier code for teacher, responsible for a particular student_id."
+20,student_registry.student_id,Unique identification number assigned to each student
+21,student_registry.class,"Class or grade level the student is enrolled in. Possible values are [-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12]. -3,-2,-1 represents pre-primary classes."
+22,student_registry.section,"Section of the class or grade level the student is assigned to. Possible values : [A,B,C,D,E,H]"
+23,student_registry.academic_year,Academic year in which the student is enrolled. Possible values are ['2024-25']
+24,student_registry.is_active,"Indicates if the school is currently active. Possible values ['Yes','No']"
+25,student_registry.gender,"Gender of the student. Possible values : ['Male','Female','Transgender']"
+26,student_registry.stream,"Stream or academic track the student is following, if applicable, Possible values: ['Arts', 'Commerce', 'Science']. If stream not specified, no need to filter this column."
+27,student_registry.social_category,"Social category of the student, Possible values: ['General', 'SC', 'ST', 'OBC', 'Not Available']. If social_category not specified, no need to filter this column."
+28,student_registry.disability_type,Type of disability student posses
+29,student_registry.disability_status,"Status of disabled student, related to disability_type"
+30,student_registry.status,status of the student
+31,total_teachers_students.school_code,10 or 11 digit unique identificaiton code for each school
+32,total_teachers_students.total_students,Total number of students stuyding in a particular school
+33,total_teachers_students.total_teachers,Total number of teachers teaching in a particular school
+34,school_registry.school_code,10 or 11 digit unique identification code for each school
+35,school_registry.school_name,Name of the school
+36,school_registry.is_active,"Indicates if the school is currently active. Possible values ['Yes','No']"
+37,school_registry.school_category,"Categorizes schools based on the range of grades they offer, directly indicating the school's educational level. Use this column to filter schools by specific educational levels, such as 'Secondary' for schools focusing on grades typically associated with secondary education. This can be one of following values : ['Pr. with Up.Pr. sec. and H.Sec.', 'Primary', 'Up. Pr. Secondary and Higher Sec', 'Upper Pr. and Secondary', 'Upper Primary only']"
+38,school_registry.affiliation_board,"Board to which the school is affiliated for education, which board curriculum school is following. Possible values: ['None', '2-State Board', '5-Others', '6-Both CBSE & State Board']"
+39,school_registry.cluster_name,Name of cluster where school is located
+40,school_registry.village_name,Name of village where school is located
+41,school_registry.block_name,Block name where school is located.
+42,school_registry.state_name,Name of state where school is located
+43,school_registry.school_established_year,Year in which school was established/built. In YYYY format.
+44,school_registry.district_name,"District of school. Possible districts : ['SIRMAUR', 'SHIMLA', 'KULLU', 'CHAMBA', 'MANDI', 'LAHUL & SPITI', 'SOLAN', 'KINNAUR', 'KANGRA', 'HAMIRPUR (H.P.)', 'BILASPUR (H.P.)', 'UNA', 'Shivalikgarh']"
+45,school_registry.school_location,"Location of the school. Possible values: ['Rural', 'Urban', 'Not Defined']"
+46,school_registry.school_type,"Indicate whether schools is only for boys or only for girls or for both gender i.e Co-ed. This can only be one of the following values ['Co-educational', 'Boys', 'Girls']"
+47,school_registry.lowest_class,minimum class on which students are studying in this school
+48,school_registry.highest_class,maximum class on which students are studying in this school
+49,school_registry.school_managment,Management type of school. Possible values are ['Department of Education']
+50,school_registry.Is_minority_school,Indicates whether the school is managed by the minority commumnity.
+51,school_registry.minority_community,Name of minority Community who are managing the school. Possible values are
+52,school_registry.medium,"Medium of instruction, language in which students are being taught. Use this shortcocde mapping ['HI', 'EN']. 'HI' for Hindi Medium schools, 'EN' for 'English Medium School'."
